@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sk.upjs.ics.diagnostika5.ZaznamDetailActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="@string/meno"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"/>
+                <TextView
+                    android:id="@+id/menoDetailTextView"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/black"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="@string/datum"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/datumDetailTextView"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/black"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="@string/poznamka"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"/>
+                <TextView
+                    android:id="@+id/poznamkaDetailTextView"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textColor="@android:color/black"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:text="@string/nameran_hodnoty_v_sekund_ch"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"/>
+
+            <GridView
+                android:id="@+id/hodnotyDetailGridView"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:gravity="center"
+                android:numColumns="4"
+                />
+
+            <TextView
+                android:text="@string/mapa_energetickej_asymetrie"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"/>
+
+
+
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+</ScrollView>

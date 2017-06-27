@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sk.upjs.ics.diagnostika5.PridajStopkamiActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/meno"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="18dp"/>
+            <EditText
+                android:id="@+id/menoPridajSEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textCursorDrawable="@null"
+                />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/stopkyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+                <Button
+                    android:id="@+id/startButton"
+                    android:text="Start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="25dp"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/resetButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="reset"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:id="@+id/pauseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pause"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/zmazButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zmaž posledne"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/ulozButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ulož"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <GridView
+            android:id="@+id/hodnotyStopovaneGridView"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:gravity="center"
+            android:numColumns="4"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="@string/poznamka"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="18dp"/>
+            <EditText
+                android:id="@+id/poznamkaPridajSEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textCursorDrawable="@null"
+
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ulož celý záznam"
+            android:onClick="ulozitZaznam"
+            />
+
+    </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
