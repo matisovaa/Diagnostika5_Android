@@ -5,7 +5,7 @@
     <string name="datum">Datum:</string>
     <string name="poznamka">Poznámka:</string>
     <string name="nameran_hodnoty_v_sekund_ch">Namerané hodnoty v sekundách:</string>
-    <string name="mapa_energetickej_asymetrie">Mapa energetickej asymetrie:</string>
+    <string name="mapa_energetickej_asymetrie">Mapa energetickej asymetrie (jang-červena):</string>
     <string name="odstran">Odstráň</string>
     <string name="namerane_hodnoty">Namerané hodnoty:</string>
     <string name="spat">Späť</string>

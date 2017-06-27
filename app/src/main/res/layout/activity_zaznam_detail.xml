@@ -81,11 +81,84 @@
 
             <GridView
                 android:id="@+id/hodnotyDetailGridView"
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
                 android:gravity="center"
                 android:numColumns="4"
                 />
+
+            <TextView
+                android:text="Výpočítaná stredová línia(SL) a koeficienty energetickej asymetrie:"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"/>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+                <TableRow>
+                    <TextView
+                        android:text="SL:"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/stredovaLiniaTextView"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@android:color/black"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="H/F:"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/hfTextView"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@android:color/black"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="L/R:"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/lrTextView"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@android:color/black"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="jin/jang:"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/jinJangTextView"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@android:color/black"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"/>
+                </TableRow>
+            </TableLayout>
 
             <TextView
                 android:text="@string/mapa_energetickej_asymetrie"
@@ -94,7 +167,27 @@
                 android:paddingRight="10dp"
                 android:paddingLeft="10dp"/>
 
+            <GridView
+                android:id="@+id/mapaEnergetickejAsimetrieGridView"
+                android:layout_width="300dp"
+                android:layout_height="85dp"
+                android:gravity="center"
+                android:numColumns="4"
+                />
 
+            <TextView
+                android:text="Graf nameraných hodnôt:"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"/>
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/grafView"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+
+                />
 
         </LinearLayout>
     </android.support.design.widget.CoordinatorLayout>
