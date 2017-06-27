@@ -53,7 +53,7 @@ public class ZaznamyContentProvider extends ContentProvider {
 
         SQLiteDatabase db = openHelper.getReadableDatabase();
         Cursor cursor = db.query(Provider.Zaznam.TABLE_NAME,
-                null,null,null,null,null,null);
+                null,null,null,null,null,Provider.Zaznam.DATUM_A_CAS + " DESC");
 
         // aby pocuvalo na zmeny
         cursor.setNotificationUri(getContext().getContentResolver(), Provider.CONTENT_URI);

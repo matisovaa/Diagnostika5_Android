@@ -104,7 +104,6 @@ public class ZaznamListActivity extends AppCompatActivity implements LoaderManag
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
         CursorLoader loader = new CursorLoader(this);
         loader.setUri(Provider.CONTENT_URI);
-        //TODO Provider.Zaznam.DATUM_A_CAS + " DESC"
         return loader;
     }
 
