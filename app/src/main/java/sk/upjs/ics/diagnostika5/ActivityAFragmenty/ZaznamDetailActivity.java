@@ -1,4 +1,4 @@
-package sk.upjs.ics.diagnostika5;
+package sk.upjs.ics.diagnostika5.ActivityAFragmenty;
 
 /*
 * Zdroje:
@@ -12,7 +12,6 @@ import android.content.ContentUris;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -38,6 +37,8 @@ import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import sk.upjs.ics.diagnostika5.R;
+import sk.upjs.ics.diagnostika5.Zaznam;
 import sk.upjs.ics.diagnostika5.databaza.Provider;
 
 public class ZaznamDetailActivity extends AppCompatActivity {

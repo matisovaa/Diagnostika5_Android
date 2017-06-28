@@ -1,4 +1,4 @@
-package sk.upjs.ics.diagnostika5;
+package sk.upjs.ics.diagnostika5.ActivityAFragmenty;
 
 import android.app.AlertDialog;
 import android.app.LoaderManager;
@@ -22,6 +22,9 @@ import java.util.Date;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import sk.upjs.ics.diagnostika5.R;
+import sk.upjs.ics.diagnostika5.Zaznam;
+import sk.upjs.ics.diagnostika5.ZaznamCursorAdapter;
 import sk.upjs.ics.diagnostika5.databaza.Provider;
 
 public class ZaznamListActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>{
@@ -90,7 +93,8 @@ public class ZaznamListActivity extends AppCompatActivity implements LoaderManag
                 z.setHodnotu(23,c.getInt(c.getColumnIndex(Provider.Zaznam.FR5)));
                 z.setHodnotu(24,c.getInt(c.getColumnIndex(Provider.Zaznam.FR6)));
 
-                Intent intent = new Intent(getApplicationContext(),ZaznamDetailActivity.class);
+                //Intent intent = new Intent(getApplicationContext(),ZaznamDetailActivity.class);
+                Intent intent = new Intent(getApplicationContext(),ZaznamDetailFrActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("zaznam", z);
                 intent.putExtras(bundle);

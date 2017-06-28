@@ -1,4 +1,4 @@
-package sk.upjs.ics.diagnostika5;
+package sk.upjs.ics.diagnostika5.ActivityAFragmenty;
 
 /*
 * Zdroje:
@@ -27,6 +27,8 @@ import com.facebook.stetho.Stetho;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import sk.upjs.ics.diagnostika5.R;
+import sk.upjs.ics.diagnostika5.Zaznam;
 import sk.upjs.ics.diagnostika5.databaza.Provider;
 
 public class PridajStopkamiActivity extends AppCompatActivity {

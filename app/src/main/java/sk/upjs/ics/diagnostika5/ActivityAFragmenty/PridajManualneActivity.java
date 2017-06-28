@@ -1,4 +1,4 @@
-package sk.upjs.ics.diagnostika5;
+package sk.upjs.ics.diagnostika5.ActivityAFragmenty;
 
 import android.app.AlertDialog;
 import android.content.AsyncQueryHandler;
@@ -19,6 +19,7 @@ import java.util.Calendar;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import sk.upjs.ics.diagnostika5.R;
 import sk.upjs.ics.diagnostika5.databaza.Provider;
 
 public class PridajManualneActivity extends AppCompatActivity {

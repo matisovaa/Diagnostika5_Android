@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ZaznamListActivity">
+        <activity android:name=".ActivityAFragmenty.ZaznamListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,9 +23,10 @@
             android:enabled="true"
             android:exported="false" />
 
-        <activity android:name=".ZaznamDetailActivity" />
-        <activity android:name=".PridajManualneActivity" />
-        <activity android:name=".PridajStopkamiActivity"></activity>
+        <activity android:name=".ActivityAFragmenty.ZaznamDetailActivity" />
+        <activity android:name=".ActivityAFragmenty.PridajManualneActivity" />
+        <activity android:name=".ActivityAFragmenty.PridajStopkamiActivity" />
+        <activity android:name=".ActivityAFragmenty.ZaznamDetailFrActivity"></activity>
     </application>
 
 </manifest>
