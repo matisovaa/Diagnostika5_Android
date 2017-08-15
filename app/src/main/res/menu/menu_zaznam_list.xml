@@ -5,8 +5,10 @@
     <item
         android:id="@+id/pridajZaznamZoznamMenu"
         android:title="@string/pridat"
-        android:icon="@android:drawable/ic_menu_add"
         app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_add"
         />
+
+
 
 </menu>

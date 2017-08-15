@@ -107,7 +107,7 @@ public class PridajManualneActivity extends AppCompatActivity {
 
         if(meno.isEmpty()){
             new AlertDialog.Builder(this)
-                    .setMessage("Neviplnili ste meno!")
+                    .setMessage("Nevyplnili ste meno!")
                     .setTitle("Upozornenie")
                     .setNeutralButton("Close", null)
                     .show();
@@ -202,7 +202,7 @@ public class PridajManualneActivity extends AppCompatActivity {
 
             } catch (NumberFormatException e) {
                 new AlertDialog.Builder(this)
-                        .setMessage("Neviplnili ste všetky namerané hodnoty!")
+                        .setMessage("Nevyplnili ste všetky namerané hodnoty!")
                         .setTitle("Upozornenie")
                         .setNeutralButton("Close", null)
                         .show();

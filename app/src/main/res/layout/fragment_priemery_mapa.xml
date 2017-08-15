@@ -10,7 +10,7 @@
         android:orientation="vertical">
 
     <TextView
-        android:text="Výpočítaná stredová línia(SL) a koeficienty energetickej asymetrie:"
+        android:text="Výpočítané koeficienty:"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:paddingRight="10dp"
